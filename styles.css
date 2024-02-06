@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+    height: 100%;
+
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/* 
+main {
+  perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+} */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 25px 0;
+
+    background-color: grey;
+}
+
+.header-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+}
+
+.slide-one {
+    position: relative;
+
+    min-height: 100vh;
+    width: 100%;
+    transform-style: inherit;
+
+    z-index: -1;
+}
+
+.slide-one::before {
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background: url(./IMG_20231024_170342.jpg);
+    transform: translateZ(-1px) scale(2);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-two {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 150px;
+
+  background-color: lightcoral;
+}
+
+.section-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.parallax-wrapper {
+  /* position: relative; */
+
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+  min-height: 100vh;
+  width: 100%;
+
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  z-index: -1;
+}
+
+.parallax-wrapper::before {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background: url(./IMG_20231024_170342.jpg);
+
+  transform: translateZ(-1px) scale(2);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.slide-four {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 150px;
+
+  background-color: lightcoral;
+}
